@@ -21,13 +21,13 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(3)
+    input = cms.untracked.int32(1)
 )
 
 # Input source
 process.source = cms.Source("PoolSource",
     secondaryFileNames = cms.untracked.vstring(),
-    fileNames = cms.untracked.vstring('file:/afs/cern.ch/work/j/jruizvar/private/tracking/CMSSW_6_2_0_SLHC1/src/SingleElectron_Pt5to50_PU140_DIGI.root')
+    fileNames = cms.untracked.vstring('file:SingleElectron_Pt5to50_PU140_DIGI.root')
 )
 
 process.options = cms.untracked.PSet(
