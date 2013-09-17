@@ -1,0 +1,11 @@
+cmsDriver.py DIGI -s DIGI,L1,DIGI2RAW \
+--geometry ExtendedPhase2TkBE \
+--conditions POSTLS261_V2::All \
+--pileup AVE_140_BX_25ns \
+--datamix NODATAMIXER \
+--customise SLHCUpgradeSimulations/Configuration/postLS1Customs.customisePostLS1,SLHCUpgradeSimulations/Configuration/phase2TkCustomsBE.customise,SLHCUpgradeSimulations/Configuration/customise_mixing.customise_NoCrossing \
+--eventcontent FEVTDEBUG \
+--datatier DIGI \
+--filein root://osg-se.sprace.org.br//store/mc/Summer13/SingleElectronFlatPt5To50/GEN-SIM/UpgrdPhase2BE_POSTLS261_V2-v3/00000/225B081C-F6C4-E211-B833-00261894387A.root \
+--pileup_input /store/mc/Summer13/MinBias_TuneZ2star_14TeV-pythia6/GEN-SIM/UpgrdPhase2BE_POSTLS261_V2-v1/10000/000C99F4-F4BE-E211-9627-003048344B08.root \
+--fileout file:SingleElectron_Pt5to50_PU140_DIGI.root 
